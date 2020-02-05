@@ -32,11 +32,18 @@
     "shower-core": "^2.1.0"
   },
   "devDependencies": {
-    "path-exists-cli": "^1.0.0",
-    "@shower/cli": "^0.2.6"
+    "@shower/cli": "^0.2.6",
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-include": "^2.4.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "path-exists-cli": "^1.0.0"
   },
   "scripts": {
     "pdf": "shower pdf",
+    "dev": "gulp serve",
     "start": "shower serve",
     "prepare": "shower prepare --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "archive": "shower archive --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
