@@ -1,0 +1,46 @@
+{
+  "name": "shower",
+  "description": "Shower HTML presentation engine",
+  "version": "2.7.0",
+  "author": {
+    "name": "Vadim Makeev",
+    "url": "https://pepelsbey.net/"
+  },
+  "homepage": "https://github.com/shower/shower",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shower/shower.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shower/shower/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "shower",
+    "presentation",
+    "template"
+  ],
+  "files": [
+    "pictures/**",
+    "index.html",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "dependencies": {
+    "@shower/material": "^2.2.2",
+    "@shower/ribbon": "^3.2.3",
+    "shower-core": "^2.1.0"
+  },
+  "devDependencies": {
+    "path-exists-cli": "^1.0.0",
+    "@shower/cli": "^0.2.6"
+  },
+  "scripts": {
+    "pdf": "shower pdf",
+    "start": "shower serve",
+    "prepare": "shower prepare --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
+    "archive": "shower archive --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
+    "publish": "shower publish --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
+    "test": "npm run prepare && ls prepared && npm run archive && path-exists archive.zip"
+  }
+}
