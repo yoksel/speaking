@@ -47,6 +47,7 @@
     "prepare": "shower prepare --files '**' --files '!{gulpfile.js,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "archive": "shower archive --files '**' --files '!{gulpfile.js,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "publish": "shower publish --files '**' --files '!{gulpfile.js,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
+    "deploy": "npm run prepare && npm run publish",
     "test": "npm run prepare && ls prepared && npm run archive && path-exists archive.zip"
   },
   "browserslist": [
