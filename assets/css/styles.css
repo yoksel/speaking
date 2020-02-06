@@ -12,3 +12,20 @@
   padding-top: 40px; }
   .slide H1, .slide H2, .slide H3, .slide H4 {
     color: #777; }
+  .slide::after {
+    left: auto;
+    right: 50px; }
+
+.icon {
+  position: absolute;
+  right: 45px;
+  bottom: 40px;
+  font-size: 120px;
+  line-height: 1; }
+
+.icon--micro {
+  margin: auto;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 120px; }
