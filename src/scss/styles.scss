@@ -12,6 +12,8 @@
 
 .slide {
   padding-top: 40px;
+  font-size: 27px;
+  line-height: 1.75;
 
   H1, H2, H3, H4 {
     color: #777;
@@ -37,4 +39,13 @@
   left: 0;
   margin: auto;
   width: 120px;
+}
+
+.qrcode {
+  width: 320px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
 }
