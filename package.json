@@ -43,11 +43,10 @@
   },
   "scripts": {
     "pdf": "shower pdf",
-    "dev": "gulp serve",
-    "start": "shower serve",
-    "prepare": "shower prepare --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
-    "archive": "shower archive --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
-    "publish": "shower publish --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
+    "start": "gulp serve",
+    "prepare": "shower prepare --files '**' --files '!{gulpfile.js,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
+    "archive": "shower archive --files '**' --files '!{gulpfile.js,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
+    "publish": "shower publish --files '**' --files '!{gulpfile.js,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "test": "npm run prepare && ls prepared && npm run archive && path-exists archive.zip"
   },
   "browserslist": [

@@ -27,7 +27,7 @@ gulp.task('includeSnippets', () => {
     .pipe(sync.stream());
 });
 
-gulp.task('serve', gulp.series('sass', () => {
+gulp.task('serve', gulp.series(['sass', 'includeSnippets'], () => {
   sync.init({
     ui: false,
     notify: false,
