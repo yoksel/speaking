@@ -49,5 +49,12 @@
     "archive": "shower archive --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "publish": "shower publish --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "test": "npm run prepare && ls prepared && npm run archive && path-exists archive.zip"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Opera versions",
+    "last 2 Edge versions"
+  ]
 }

@@ -9,13 +9,7 @@ sass.compiler = require('node-sass');
 
 gulp.task('sass', function() {
   var processors = [
-    autoprefixer({browsers: [
-      'last 1 version',
-      'last 2 Chrome versions',
-      'last 2 Firefox versions',
-      'last 2 Opera versions',
-      'last 2 Edge versions'
-      ]})
+    autoprefixer()
     ];
 
   return gulp.src('src/scss/styles.scss')
