@@ -29,6 +29,9 @@
   display: flex;
   justify-content: space-between; }
 
+.columns__item--centered {
+  text-align: center; }
+
 .slide--cover H2 {
   margin: 130px 0 0;
   text-align: center;
