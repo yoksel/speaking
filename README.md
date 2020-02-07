@@ -1,3 +1,3 @@
 # Публичные выступления
 
-Слайды https://yoksel.github.io/speaking/
+Слайды доклада https://yoksel.github.io/speaking/
